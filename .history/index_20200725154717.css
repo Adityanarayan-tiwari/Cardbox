@@ -101,12 +101,6 @@
     padding-top: 20px;
     padding-bottom: 5px;
 }
-
-
-
-
-
-
 .lower {
     width: 100%;
     background: orange;
@@ -120,9 +114,6 @@
     
 
 
-
-
-
 .slick-slide + .slick-slide {
     pointer-events: none;
 }
@@ -132,9 +123,19 @@
 
 
 
+.card-wrapper .card:nth-child(1){
+    order: 1;
+    /* pointer-events: none; */
+}
+.card-wrapper .card:nth-child(2){
+    order: 2;
+}
 
 
-/* States */
+
+
+
+/* mystyle */
 
 
 .btnactive {
@@ -142,6 +143,11 @@
   }
 
 
+.active{
+    transform:  translateX(0px) translateY(-32px) translateZ(0px) scale(1.2);
+    transition: 1s ease-in-out;
+    z-index: 1;
+}
 .slick-center{
     transform:  translateX(0px) translateY(-30px) translateZ(0px) scale(1.2);
     transition: 1s ease-in-out;

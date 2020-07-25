@@ -58,6 +58,16 @@ $(document).ready(function(){
     ]
     
     });
+    // $('.card-wrapper').on('afterChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
+    
+    // $('.card-wrapper').on('beforeChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
+
 });
 
 

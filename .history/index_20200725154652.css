@@ -44,8 +44,12 @@
     height: 550px;
     margin: 0 auto;
     overflow: hidden;
+    /* background-color: bisque; */
+    /* border:1px solid green; */
     padding: 3% 0 2% 0%;
 }
+
+
 .card-slider .card-wrapper .card{
     max-width: 300px;
     min-height: 400px;
@@ -72,7 +76,6 @@
 }
 
 
-
 .card-content{
     padding: 20px 10px;
     padding-bottom: 60px;
@@ -93,6 +96,7 @@
 .card-content ul li:nth-child(2){
     font-weight: bold;
 }
+
 .card-content ul:nth-child(4) {
     padding-top: 30px;
     padding-bottom: 35px;
@@ -101,12 +105,6 @@
     padding-top: 20px;
     padding-bottom: 5px;
 }
-
-
-
-
-
-
 .lower {
     width: 100%;
     background: orange;
@@ -120,9 +118,6 @@
     
 
 
-
-
-
 .slick-slide + .slick-slide {
     pointer-events: none;
 }
@@ -132,9 +127,19 @@
 
 
 
+.card-wrapper .card:nth-child(1){
+    order: 1;
+    /* pointer-events: none; */
+}
+.card-wrapper .card:nth-child(2){
+    order: 2;
+}
 
 
-/* States */
+
+
+
+/* mystyle */
 
 
 .btnactive {
@@ -142,6 +147,11 @@
   }
 
 
+.active{
+    transform:  translateX(0px) translateY(-32px) translateZ(0px) scale(1.2);
+    transition: 1s ease-in-out;
+    z-index: 1;
+}
 .slick-center{
     transform:  translateX(0px) translateY(-30px) translateZ(0px) scale(1.2);
     transition: 1s ease-in-out;

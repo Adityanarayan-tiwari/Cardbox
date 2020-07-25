@@ -12,14 +12,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-
-
-
-
-
-
-
-//Jquery
+Jquery
 $(document).ready(function(){
     $('.card-wrapper').slick({
         
@@ -58,6 +51,16 @@ $(document).ready(function(){
     ]
     
     });
+    // $('.card-wrapper').on('afterChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
+    
+    // $('.card-wrapper').on('beforeChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
+
 });
 
 

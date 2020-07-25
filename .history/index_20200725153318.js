@@ -1,5 +1,5 @@
 
-// Javascript
+// Add active class to the current button (highlight it)
 var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -9,6 +9,9 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" btnactive", "");
   }
   this.className += " btnactive";
+
+  
+
   });
 }
 
@@ -19,7 +22,7 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-//Jquery
+
 $(document).ready(function(){
     $('.card-wrapper').slick({
         
@@ -58,6 +61,16 @@ $(document).ready(function(){
     ]
     
     });
+    // $('.card-wrapper').on('afterChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
+    
+    // $('.card-wrapper').on('beforeChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
+
 });
 
 

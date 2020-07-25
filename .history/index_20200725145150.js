@@ -1,25 +1,10 @@
 
-// Javascript
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("btnactive");
-  if (current.length > 0) { 
-    current[0].className = current[0].className.replace(" btnactive", "");
+function myFunction() {
+    var getelement = document.getElementsByClassName('prev');
+    console.log(getelement);
+    // getelement.classList.toggle('mystyle');
   }
-  this.className += " btnactive";
-  });
-}
 
-
-
-
-
-
-
-
-//Jquery
 $(document).ready(function(){
     $('.card-wrapper').slick({
         
@@ -58,8 +43,16 @@ $(document).ready(function(){
     ]
     
     });
+    // $('.card-wrapper').on('afterChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
+    
+    // $('.card-wrapper').on('beforeChange', function(event, slick, currentSlide){
+    //     $('.card').removeClass('active');
+    //     $('.card').addClass('active');
+    // });
 });
-
 
 
 
