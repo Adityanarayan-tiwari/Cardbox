@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('.card-wrapper').slick({
-        
     slidesToShow: 3,
     slidesToScroll: 1,
     
@@ -34,15 +33,15 @@ $(document).ready(function(){
         }
         }
     ]
-    
+    var currentSlide = $('.your-element').slick('slickCurrentSlide');
     });
-    // $('.card-wrapper').on('afterChange', function(event, slick, currentSlide){
-    //     $('.card').removeClass('active');
-    //     $('.card').addClass('active');
-    // });
+    $('.card-wrapper').on('afterChange', function(event, slick, currentSlide){
+        $('.card').removeClass('active');
+        $('.card').addClass('active');
+    });
     
-    // $('.card-wrapper').on('beforeChange', function(event, slick, currentSlide){
-    //     $('.card').removeClass('active');
-    //     $('.card').addClass('active');
-    // });
+    $('.card-wrapper').on('beforeChange', function(event, slick, currentSlide){
+        $('.card').removeClass('active');
+        $('.card').addClass('active');
+    });
 });

@@ -129,7 +129,6 @@
     position: absolute;
     bottom: 0;
     padding-top: 10px;
-    opacity: .6;
 }
     
 
@@ -142,7 +141,7 @@
     z-index: 1;
 }
 
-.card:hover h3{
+.card.hover h3{
     background: orange;
     border-radius: 20px;
     color: white;
